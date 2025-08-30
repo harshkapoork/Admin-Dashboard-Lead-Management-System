@@ -1,5 +1,20 @@
 <template>
-  <div class="container ">
+ <section class="content">
+      <div class="container-fluid">
+      <div class="row">
+            <div class="col">
+                  <div class="card">
+              <div class="card-header">
+                <h3 class="card-title"><router-link to="/task" ><button class="btn btn-primary">Task List</button></router-link></h3>
+              </div>
+                 <div class="card-footer clearfix d-none">
+                <ul class="pagination pagination-sm m-0 float-right">
+                  <li class="page-item"><button class="page-link "  @click="pageback">&laquo;</button></li>
+                  
+                  <li class="page-item"><button class="page-link" @click="pagenext">&raquo;</button></li>
+                </ul>
+              </div>
+              <!-- /.card-header -->
  
    <div v-if="successMessage" class="alert alert-success mt-3">
       {{ successMessage }}
@@ -8,7 +23,7 @@
     <div v-if="errorMessage" class="alert alert-danger mt-3">
       {{ errorMessage }}
     </div>
-    <form @submit.prevent="updateForm" class="">
+    <form @submit.prevent="updateForm" class="p-3 mx-2 my-3 border">
       <div class="mb-3">
         <label class="form-label">Name</label>
         <input v-model="form.name" type="text" class="form-control" required>
@@ -46,6 +61,11 @@
 
  
   </div>
+  </div>
+  </div>
+  </div>
+</section>
+
 </template>
 
 <script setup>

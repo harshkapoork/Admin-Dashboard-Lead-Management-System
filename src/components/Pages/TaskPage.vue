@@ -143,8 +143,8 @@
     </section>
 
     <!-- Main content -->
-    <section class="content">
-      <div class="container-fluid">
+    <section class="content ">
+      <div class="container-fluid ">
         <div class="row">
           <div class="col-12">
             <!-- Default box -->
@@ -161,7 +161,7 @@
                   </button>
                 </div>
               </div>
-              <div class="card-body">
+              <div class="card-body ">
                 <Page/>
           
               </div>

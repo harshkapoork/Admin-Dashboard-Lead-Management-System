@@ -162,8 +162,8 @@
                   </button>
                 </div>
               </div>
-              <div class="card-body">
-                 <h3 class="card-title"><router-link to="/task" ><button class="btn btn-primary"> Task List </button></router-link></h3>
+              <div class="card-body ">
+               
                 <Page/>
           
               </div>
