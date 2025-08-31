@@ -1,7 +1,9 @@
 <template>
- <section class="content">
-      <div class="container-fluid">
-           <div class="row">
+ <section class="content ">
+      <div class="container-fluid ">
+     
+        <!-- Main row -->
+        <div class="row">
             <div class="col">
                   <div class="card">
               <div class="card-header">
@@ -15,14 +17,15 @@
                 </ul>
               </div>
               <!-- /.card-header -->
-    <h3></h3>
-      <div v-if="successMessage" class="alert alert-success mt-3">
+    <div v-if="successMessage" class="alert alert-success mt-3">
       {{ successMessage }}
     </div>
 
     <div v-if="errorMessage" class="alert alert-danger mt-3">
       {{ errorMessage }}
     </div>
+                   <!-- table for the task -->
+            
     <form  @submit.prevent="submitForm" class=" p-3 mx-2 my-3 border">
       <div class="mb-3">
         <label class="form-label">Name</label>
@@ -58,13 +61,24 @@
         Submit
       </button>
     </form>
-
-  
-  </div>
+              </div>
+               <!-- table for the task -->
+              <!-- /.card-body -->
+             
             </div>
-           </div>
-           </div>
-  </section>
+            <!-- /.card -->
+            </div>
+     
+      
+        </div>
+           <!-- Small boxes (Stat box) -->
+     
+        <!-- /.row -->
+        <!-- /.row (main row) -->
+      <!-- /.container-fluid -->
+    </section>
+
+ 
 </template>
 
 <script setup>

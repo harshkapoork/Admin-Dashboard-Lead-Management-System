@@ -1,7 +1,5 @@
 <template>
-   
-
-<div class="sidebar-mini sidebar-collapse  ">
+  
 <!-- Site wrapper -->
 <div class="wrapper">
   <!-- Navbar -->
@@ -234,7 +232,7 @@
     <!-- Control sidebar content goes here -->
   </aside>
   <!-- /.control-sidebar -->
-</div>
+
 <!-- ./wrapper -->
 
 </div>

@@ -1,5 +1,27 @@
 <template>
-      <div  class="row">
+ <section class="content ">
+      <div class="container-fluid ">
+     
+        <!-- Main row -->
+        <div class="row">
+            <div class="col">
+                  <div class="card">
+              <div class="card-header">
+               
+              </div>
+                 <div class="card-footer clearfix d-none">
+                <ul class="pagination pagination-sm m-0 float-right">
+                  <li class="page-item"><button class="page-link "  @click="pageback">&laquo;</button></li>
+                  
+                  <li class="page-item"><button class="page-link" @click="pagenext">&raquo;</button></li>
+                </ul>
+              </div>
+              <!-- /.card-header -->
+  
+                   <!-- table for the task -->
+              <div class="card-body">
+            
+                 <div  class="row">
           <div class="col-lg-6 col-12">
             <!-- small box -->
             <div class="small-box bg-primary">
@@ -62,6 +84,31 @@
           </div>
      
         </div>
+              </div>
+               <!-- table for the task -->
+              <!-- /.card-body -->
+              <div class="card-footer clearfix">
+                <ul class="pagination pagination-sm m-0 float-right">
+                  <li class="page-item"><button class="page-link "  @click="pageback">&laquo;Prev</button></li>
+                  
+                  <li class="page-item"><button class="page-link" @click="pagenext">Next&raquo;</button></li>
+                </ul>
+              </div>
+            </div>
+            <!-- /.card -->
+            </div>
+     
+      
+        </div>
+           <!-- Small boxes (Stat box) -->
+     
+        <!-- /.row -->
+        <!-- /.row (main row) -->
+      </div><!-- /.container-fluid -->
+    </section>
+
+
+    
 </template>
     <script setup>
  
